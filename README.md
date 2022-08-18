@@ -36,11 +36,13 @@ Since static variables do NOT persist in Java between executions, when a program
 ```
   Gitlet: storing all data
     - STAGING: staging files for commits.  
-       - TO_ADD: hashmap for additional files.  
-       - TO_REMOVE: hashmap for removal files.  
+       - TO_ADD: stored the hashmap for additional files.  
+       - TO_REMOVE: stored hashmap for removal files.  
     - BRANCHES: storing all about branches.  
        - branch: the file for staging branches tree.  
        - currB: the active branch head's commit id.  
-    - ALL: storing all Commits.  
-    - head: storing the head of all commits.  
+    - ALL: storing commit treeMap, including all commits.  
+    - head: storing the head of all commits.
+```
+Because of java serialization follows pointers, all objects pointed by the object are serialised and written. To aovid this, the  `head` and `currB` use java pointers to refer to SHA-1 hash strings and strings.
 
