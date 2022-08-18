@@ -3,11 +3,12 @@
 # Commands
 Compiling the program with: 
 ```
-    javac gitlet/*.java
-    
+javac gitlet/*.java  
 ```    
 Running various git command with:
-    java gitlet.Main [command]
+```
+java gitlet.Main [command]
+```
 The gitlet supports `init`, `add`, `commit`, `rm`, `log`, `global-log`, `find`, `status`, `checkout`, `branch`, `rm-branch`, `reset`, `merge`.
     
 
