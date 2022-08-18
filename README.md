@@ -9,35 +9,35 @@ Running various git command with:
 ```
 java gitlet.Main [command]
 ```
-**The gitlet supports Commands:**
+The gitlet supports Commands:
+```
+init 
 
-`init`: java gitlet.Main init 
+add [file name]
 
-`add`: java gitlet.Main add [file name]
+commit [message]
 
-`commit`: java gitlet.Main commit [message]
+rm [file name]
 
-`rm`: java gitlet.Main rm [file name]
+log
 
-`log`: java gitlet.Main log
+global-log
 
-`global-log`: java gitlet.Main global-log
+find [commit message]
 
-`find`: java gitlet.Main find [commit message]
+status
 
-`status`: java gitlet.Main status
+checkout -- [file name]
 
-`checkout file`: java gitlet.Main checkout -- [file name]
+checkout [commit id] -- [file name]
 
-`checkout commit`: java gitlet.Main checkout [commit id] -- [file name]
+checkout [branch name]
 
-`checkout branch`: java gitlet.Main checkout [branch name]
+branch [branch name]
 
-`branch`: java gitlet.Main branch [branch name]
+rm-branch [branch name]
 
-`rm-branch`: java gitlet.Main rm-branch [branch name]
+reset [commit id]
 
-`reset`: java gitlet.Main reset [commit id]
-
-`merge`: java gitlet.Main merge [branch name]
-
+merge [branch name]
+```
