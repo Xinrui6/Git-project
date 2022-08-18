@@ -9,8 +9,8 @@ Running various git command with:
 ```
 java gitlet.Main [command]
 ```
-The gitlet supports Commands:
-`init`: java gitlet.Main init
+**The gitlet supports Commands:**
+`init`: java gitlet.Main init   
 `add`: java gitlet.Main add [file name]
 `commit`: java gitlet.Main commit [message]
 `rm`: java gitlet.Main rm [file name]
